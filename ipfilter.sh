@@ -1,0 +1,1 @@
+/etc/firewall/simple.sh
