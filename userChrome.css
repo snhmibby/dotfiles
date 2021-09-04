@@ -1,1 +1,35 @@
-/home/jurjen/.mozilla/firefox/00vvaboo.default-esr/chrome/userChrome.css
+/* Some modifications for my small-screen laptop.
+ * Hide clutter, remove padding etc. */
+
+/* Adjust tree-style tab sidebar */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+  display: none;
+}
+
+#sidebar-header {
+    padding: 0px !important;
+    display: none !important;
+}
+#TabsToolbar {
+    visibility: collapse !important;
+}
+.sidebar-splitter {
+    width: 1px !important;
+}
+
+/* Adjust the navigation bar so it takes less space */
+#nav-bar {
+    padding: 0px !important;
+    border-top: none !important;
+    background-color: none !important;
+    background-image: none !important;
+}
+#nav-bar toolbarbutton {
+    padding: 0px 0px !important;
+}
+#urlbar {
+    margin: 0px 0px !important;
+}
+[uidensity="compact"]:root #urlbar, [uidensity="compact"]:root .searchbar-textbox {
+    min-height: 24px !important;
+}
