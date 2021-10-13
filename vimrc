@@ -1,3 +1,4 @@
+
 let mapleader = ","
 syntax on
 filetype plugin indent on
@@ -56,10 +57,11 @@ call plug#end()
 colorscheme gruvbox
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"NERDTREE
+nmap <Leader>nt :NERDTreeToggle<cr>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " VIM-GO
-
-"personal mappings
-
 "Disable things that COC can do
 let g:go_doc_keywordprg_enabled = 0
 let g:go_def_mapping_enabled = 0
@@ -235,9 +237,4 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"NERDTREE
-nmap <Leader>nt :NERDTreeToggle<cr>
-
 
