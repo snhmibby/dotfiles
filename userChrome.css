@@ -1,5 +1,6 @@
 /* Some modifications for my small-screen laptop.
- * Hide clutter, remove padding etc. */
+ * Hide clutter, remove padding etc.
+ * I know nothing about either css nor chrome. don't judge me */
 
 /* Adjust tree-style tab sidebar */
 #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
