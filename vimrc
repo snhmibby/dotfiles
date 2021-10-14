@@ -56,6 +56,8 @@ Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdcommenter'
 Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'ludovicchabant/vim-gutentags'
 call plug#end()
 
 
