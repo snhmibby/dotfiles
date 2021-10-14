@@ -12,6 +12,8 @@ set completeopt+=preview
 set foldmethod=syntax
 set clipboard+=unnamed
 set encoding=utf-8
+set wildmenu
+set wildmode=list
 set hidden
 set nobackup
 set nowritebackup
