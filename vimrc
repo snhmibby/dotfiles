@@ -53,6 +53,9 @@ Plug 'morhetz/gruvbox'
 Plug 'chrisbra/matchit'
 Plug 'preservim/tagbar'
 Plug 'sheerun/vim-polyglot'
+Plug 'jiangmiao/auto-pairs'
+Plug 'preservim/nerdcommenter'
+Plug 'junegunn/fzf'
 call plug#end()
 
 
@@ -61,7 +64,7 @@ call plug#end()
 " TODO: should put big chunks of configuration text (looking at you coc) in another file or something.
 colorscheme gruvbox
 nmap <Leader>nt :NERDTreeToggle<cr>
-nmap <Leader>tb :TagbarOpenAutoClose<cr>
+nmap <Leader>tb :TagbarToggle<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " VIM-GO
