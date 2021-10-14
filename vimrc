@@ -1,4 +1,4 @@
-
+set nocompatible
 let mapleader = ","
 syntax on
 filetype plugin indent on
@@ -50,15 +50,18 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree'
 Plug 'morhetz/gruvbox'
+Plug 'chrisbra/matchit'
+Plug 'preservim/tagbar'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" PLUGIN configuration (small ones first)
+" TODO: should put big chunks of configuration text (looking at you coc) in another file or something.
 colorscheme gruvbox
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"NERDTREE
 nmap <Leader>nt :NERDTreeToggle<cr>
+nmap <Leader>tb :TagbarOpenAutoClose<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " VIM-GO
