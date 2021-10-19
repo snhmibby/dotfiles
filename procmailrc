@@ -1,0 +1,29 @@
+PATH=/bin:/usr/bin:/usr/local/bin
+MAILDIR=$HOME/mail
+DEFAULT=$HOME/mail/inbox-unsorted
+LOGFILE=/dev/null
+SHELL=/bin/sh
+
+#check mailing lists
+:0
+* ^List-Id:[^>]+<\/[^>]+
+list/$MATCH
+
+#TODO:
+#setup special boxes for marktplaats/etc
+
+#sort incoming mail per who it was sent to
+:0
+* ^To.*landloper@riseup.net
+inbox/riseup-landloper
+
+:0
+* ^To:.*jurjenm@yahoo.com
+inbox/yahoo-jurjenm
+
+:0
+* ^To:.*@jurjen.dev
+inbox/@jurjen.dev
+
+:0
+inbox-unsorted

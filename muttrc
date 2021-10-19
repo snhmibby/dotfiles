@@ -1,0 +1,61 @@
+#TODO: set folder-hooks
+#TODO: set up a better password-store
+
+#files and folders
+set folder="$HOME/mail"
+set mbox=+inbox-unsorted
+set postponed=+postponed
+set record=+sent
+set alias_file=~/mail/.mutt_aliases
+mailboxes +inbox/@jurjen.dev
+mailboxes +inbox/yahoo-jurjenm
+mailboxes +inbox/riseup-landloper
+mailboxes +list/rainbow-belgium.lists.riseup.net
+mailboxes +list/rawfood.rainbowinfo.de
+
+#outgoing mail
+set smtp_pass='haha, no...'
+set my_email='info@jurjen.dev'
+set smtp_url="smtps://$my_email@mail.gandi.net:465"
+set ssl_force_tls=yes
+set ssl_starttls=yes
+set from = "info@jurjen.dev"
+set realname = "Jurjen Middendorp"
+set use_from = yes
+set editor=vim
+set edit_headers
+set copy #copy outgoing emails
+set fast_reply
+set reply_to
+set reverse_name
+set include #include message when replying
+set forward_quote #include message when forwarding
+
+
+#behaviour and display
+set date_format="%m/%d"
+set index_format="[%Z] %D %20.20F %s"
+set uncollapse_jump
+set sort = threads
+set delete=yes
+set nomark_old
+
+#Pager
+set pager_index_lines = 10
+set pager_context = 3
+set pager_stop
+set menu_scroll
+set tilde
+unset markers
+set quote_regexp = "^( {0,4}[>|:#%]| {0,4}[a-z0-9]+[>|]+)+"
+alternative_order text/plain text/enriched text/html
+
+#keys 
+bind index <space> collapse-thread
+bind index N search-opposite
+bind pager N search-opposite
+bind pager j next-line
+bind pager k previous-line
+bind pager g top
+bind pager G bottom
+bind attach <return> view-mailcap
