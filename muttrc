@@ -14,7 +14,7 @@ mailboxes +list/rainbow-belgium.lists.riseup.net
 mailboxes +list/rawfood.rainbowinfo.de
 
 #outgoing mail
-set smtp_pass='haha, no...'
+set smtp_pass='Hkh4M64JACq93fr'
 set my_email='info@jurjen.dev'
 set smtp_url="smtps://$my_email@mail.gandi.net:465"
 set ssl_force_tls=yes
@@ -48,6 +48,9 @@ set menu_scroll
 set tilde
 unset markers
 set quote_regexp = "^( {0,4}[>|:#%]| {0,4}[a-z0-9]+[>|]+)+"
+
+#use mailcap to view html
+auto_view text/html
 alternative_order text/plain text/enriched text/html
 
 #keys 

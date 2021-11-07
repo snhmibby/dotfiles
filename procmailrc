@@ -9,9 +9,6 @@ SHELL=/bin/sh
 * ^List-Id:[^>]+<\/[^>]+
 list/$MATCH
 
-#TODO:
-#setup special boxes for marktplaats/etc
-
 #sort incoming mail per who it was sent to
 :0
 * ^To.*landloper@riseup.net
