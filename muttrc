@@ -7,10 +7,13 @@ set mbox=+inbox-unsorted
 set postponed=+postponed
 set record=+sent
 set alias_file=~/mail/.mutt_aliases
+set tmpdir=/tmp
 mailboxes +inbox/@jurjen.dev
 mailboxes +inbox/yahoo-jurjenm
 mailboxes +inbox/riseup-landloper
 mailboxes +list/rainbow-belgium.lists.riseup.net
+mailboxes +list/rawfood.rainbowinfo.de
+mailboxes +list/discourse.gohugo.io
 mailboxes +list/rawfood.rainbowinfo.de
 
 #outgoing mail

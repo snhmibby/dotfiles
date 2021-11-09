@@ -50,6 +50,7 @@ nnoremap <C-l> <C-w>l
 call plug#begin('~/.vim/plugged')
 Plug 'alvan/vim-closetag'
 Plug 'chrisbra/matchit'
+Plug 'evanleck/vim-svelte'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf'
