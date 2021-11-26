@@ -36,6 +36,11 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+# generic completion dir
+for f in ~/.bash_completion/*; do
+  source "$f"
+done
+
 #fzf keybindings & completion
 if [ -d /usr/share/doc/fzf/examples/ ]; then
   source /usr/share/doc/fzf/examples/key-bindings.bash
@@ -54,5 +59,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH="$PATH:/usr/sbin:/usr/local/go/bin:$HOME/go/bin:$HOME/bin"
+export EDITOR=vim
+export PATH="$PATH:/usr/sbin:/usr/local/go/bin:$HOME/go/bin:$HOME/bin:$HOME/bin/heroku/bin:$HOME/.local/bin"
 set -o vi

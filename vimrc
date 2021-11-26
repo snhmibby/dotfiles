@@ -13,12 +13,14 @@ set foldmethod=syntax
 set clipboard+=unnamed
 set encoding=utf-8
 set wildmenu
-set wildmode=list
+set wildmode=list:longest
 set hidden
 set nobackup
 set nowritebackup
+set title
 set cmdheight=2
 set updatetime=300
+set laststatus=2 "for lightline plugin
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
 if has("nvim-0.5.0") || has("patch-8.1.1564")
@@ -31,6 +33,9 @@ endif
 "my stupid maps
 nmap <C-t> <C-o>
 nmap  <esc>:nohls<cr>
+inoremap <expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<TAB>"
+
 
 "simple window navigation
 nnoremap <C-h> <C-w>h
@@ -63,6 +68,8 @@ Plug 'preservim/tagbar'
 Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
+Plug 'mattn/emmet-vim'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 
 
@@ -72,8 +79,24 @@ call plug#end()
 colorscheme gruvbox
 nmap <Leader>nt :NERDTreeToggle<cr>
 nmap <Leader>tb :TagbarToggle<cr>
+au BufWinEnter * let g:AutoPairs['<']='>'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" lightline plugin
+
+let g:lightline = {
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component': {
+      \   'gitbranch': '%{FugitiveStatusline()}'
+      \ },
+      \ }
+
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " VIM-GO
 "Disable things that COC can do
 let g:go_doc_keywordprg_enabled = 0

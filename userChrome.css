@@ -9,10 +9,11 @@
   display: none;
 }
 
-#sidebar-box *,
-#sidebar-box {
+
+#sidebar {
     padding: 0px !important;
     margin: 0px !important;
+    min-width: 0px !important;
 }
 
 #sidebar-header {
@@ -20,6 +21,7 @@
 }
 
 #TabsToolbar {
+    display: none !important;
     visibility: collapse !important;
 }
 
