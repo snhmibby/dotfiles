@@ -1,6 +1,16 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR __fish_initialized:3100
+SETUVAR _fish_abbr__2E_2E_:cd\x20\x2e\x2e
+SETUVAR _fish_abbr__2E_2E_2E_:cd\x20\x2e\x2e/\x2e\x2e
+SETUVAR _fish_abbr__2E_2E_2E_2E_:cd\x20\x2e\x2e/\x2e\x2e/\x2e\x2e
+SETUVAR _fish_abbr_add:lf\x20ls\x20\x2dF
+SETUVAR _fish_abbr_c:clear
+SETUVAR _fish_abbr_cl:clear\x3b\x20ls
+SETUVAR _fish_abbr_g:egrep
+SETUVAR _fish_abbr_l:less
+SETUVAR _fish_abbr_lf:ls\x20\x2dF
+SETUVAR _fish_abbr_v:vim
 SETUVAR fish_color_autosuggestion:747369
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:99cc99
