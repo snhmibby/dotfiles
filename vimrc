@@ -8,7 +8,7 @@ set mouse=a
 set number
 set autoindent smartindent
 set ts=4 sw=4
-set completeopt+=preview
+set completeopt=menu,menuone,longest
 set foldmethod=syntax
 set clipboard+=unnamed
 set encoding=utf-8
@@ -33,25 +33,22 @@ endif
 "my stupid maps
 nmap <C-t> <C-o>
 nmap  <esc>:nohls<cr>
-inoremap <expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
-inoremap <expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<TAB>"
+"inoremap <expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+"inoremap <expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<TAB>"
 
 
-"simple window navigation
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+"simple window navigation (minibufexpl does this mapping also?)
+"nnoremap <C-h> <C-w>h
+"nnoremap <C-j> <C-w>j
+"nnoremap <C-k> <C-w>k
+"nnoremap <C-l> <C-w>l
 
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""""PLUGINS
+""" PLUGINS
+" TODO: find minibuf explorer to add here (now it's installed manually)
 
-"load plugins from ~/vim/plugins
-"execute pathogen#infect('~/vim/plugins/{}')
-
-"use vim-plug
 call plug#begin('~/.vim/plugged')
 Plug 'alvan/vim-closetag'
 Plug 'chrisbra/matchit'
@@ -68,6 +65,7 @@ Plug 'morhetz/gruvbox'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdcommenter'
 Plug 'preservim/tagbar'
+Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
@@ -78,22 +76,65 @@ call plug#end()
 " PLUGIN configuration (small ones first)
 " TODO: should put big chunks of configuration text (looking at you coc) in another file or something.
 colorscheme gruvbox
-nmap <Leader>nt :NERDTreeToggle<cr>
-nmap <Leader>tb :TagbarToggle<cr>
-au BufWinEnter * let g:AutoPairs['<']='>'
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" lightline plugin
+" NerdTree
+nmap <Leader>nt :NERDTreeToggle<cr>
+let g:NERDTreeMouseMode=3
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" tagbar
+nmap <Leader>tb :TagbarToggle<cr>
+let g:tagbar_autofocus=1
+let g:tagbar_compact=1
+let g:tagbar_show_visibility=1
+let g:tagbar_singleclick=1
+let g:tagbar_foldlevel=0
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" emmet
+let g:user_emmet_leader_key='<C-e>'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" autopairs
+au BufWinEnter * let g:AutoPairs['<']='>'
+au FileType html let b:AutoPairs = AutoPairsDefine({'{{' : '}}', '{{<' : '>}}', '<!--' : '-->'}, ['{'])
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" minibuf explorer
+let g:miniBufExplMapWindowNavArrows=1
+let g:miniBufExplMapWindowNavVim=1
+let g:miniBufExplUseSingleClick = 1
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" lightline status bar
 
 let g:lightline = {
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'component': {
-      \   'gitbranch': '%{FugitiveStatusline()}'
-      \ },
-      \ }
+  \ 'active': {
+  \   'left': [ [ 'mode', 'paste', 'coc-status' ],
+  \             [ 'gitbranch' ],
+  \             [ 'readonly', 'filename', 'modified' ] ]
+  \ },
+  \ 'component': {
+  \   'coc-status': '%{coc#status()}',
+  \   'gitbranch': '%{FugitiveStatusline()}',
+  \ },
+  \ 'component_function': {
+  \   'filetype': 'MyFiletype',
+  \   'fileformat': 'MyFileformat',
+  \ },
+  \ }
+
+function! MyFiletype()
+  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
+endfunction
+
+function! MyFileformat()
+  return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
+endfunction
 
 
 
@@ -151,12 +192,15 @@ inoremap <silent><expr> <TAB>
       \ <SID>check_back_space() ? "\<TAB>" :
       \ coc#refresh()
 
+inoremap <silent><expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<S-TAB>"
+
 function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
 let g:coc_snippet_next = '<tab>'
+let g:coc_snippet_prev = '<s-tab>'
 
 " Use <c-space> to trigger completion.
 if has('nvim')
