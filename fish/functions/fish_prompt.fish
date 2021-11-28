@@ -19,7 +19,8 @@ function fish_prompt --description 'Write out the prompt'
     set_color normal
 
     # Display second line
-    set -l color_cursor '8829F9'
+    #set -l color_cursor '8829F9'
+    set -l color_cursor blue
     printf '\n'
     set_color white -b $color_cursor
     printf '  '
