@@ -16,11 +16,9 @@ function fish_prompt_get_left_prompt --description 'Get first line left prompt c
     if [ (prompt_pwd) = '~' ]
         printf '  ~ '
         set_color $cl_blue_2 -b normal
-        printf ''
     else if [ (prompt_pwd) = '/' ]
         printf '  / '
         set_color $cl_blue_2 -b normal
-        printf ''
     else
         printf '  '
         set_color $cl_blue_2 -b $cl_blue_3
@@ -28,7 +26,7 @@ function fish_prompt_get_left_prompt --description 'Get first line left prompt c
         set_color $cl_black -b $cl_blue_3
         printf ' %s ' (prompt_pwd)
         set_color $cl_blue_3 -b normal
-        printf ''
     end
+    printf ''
     set_color normal
 end
