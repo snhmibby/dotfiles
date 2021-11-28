@@ -1,1 +1,0 @@
-/home/jurjen/.config/fish/
