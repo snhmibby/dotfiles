@@ -21,8 +21,8 @@ end
 
 
 # SOURCE NONSTANDARD CONFIG FILES
-if [ -f $HOME/.config/fish/aliases/main.fish ]
-    source $HOME/.config/fish/aliases/main.fish
+if [ -f $HOME/.config/fish/aliases.fish ]
+    source $HOME/.config/fish/aliases.fish
 end
 
 if [ -f $HOME/.config/fish/private.fish ]
