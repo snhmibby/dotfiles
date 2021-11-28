@@ -29,7 +29,7 @@ if [ -f $HOME/.config/fish/private.fish ]
     source $HOME/.config/fish/private.fish
 end
 
-if [ -f $HOME.config/fish/gitprompt.fish ]
+if [ -f $HOME/config/fish/gitprompt.fish ]
     source $HOME/.config/fish/gitprompt.fish
 end
 
