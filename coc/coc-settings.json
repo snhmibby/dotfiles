@@ -1,0 +1,52 @@
+{
+	"diagnostic": {
+		"checkCurrentLine": true,
+		"warningSign": "!",
+		"errorSign": "✘",
+		"infoSign": "?",
+	},
+	"outline": {
+		"showLineNumber": false,
+		"sortBy": "position"
+	},
+	"snippets": {
+		"autoTrigger": true,
+		"priority": 1
+	},
+	"suggest": {
+		"autoTrigger": "trigger",
+		"enablePreview": false,
+		"keepCompleteopt": true,
+		"noselect": false,
+		"snippetSupport": true
+	},
+	"suggest.timeout": 5000,
+	"coc.preferences.formatOnSaveFiletypes": [
+		"javascript",
+		"json",
+		"css",
+		"scss",
+		"go"
+	],
+	"list": {
+		"height": 40,
+		"alignColumns": true,
+		"insertMappings": {
+			"<C-r>": "do:refresh",
+			"<C-n>": "normal:j",
+			"<C-p>": "normal:k"
+		}
+	},
+	"languageserver": {
+		"ccls": {
+			"command": "ccls",
+			"filetypes": ["c", "cpp", "objc", "objcpp"],
+			"rootPatterns": [".ccls", "compile_commands.json", ".vim/", ".git/", ".hg/"],
+			"initializationOptions": {
+				"cache": {
+					"directory": "/tmp/ccls"
+				}
+			}
+		}
+	}
+}
