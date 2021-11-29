@@ -27,6 +27,10 @@ SETUVAR _fish_abbr_v:vim
 SETUVAR _fish_abbr_vimrc:vim\x20/home/jurjen/\x2evimrc
 SETUVAR _fish_abbr_wifiscan:sudo\x20iwlist\x20wlp2s0\x20scan
 SETUVAR _fish_abbr_ws:sudo\x20wireshark
+SETUVAR _fisher_PatrickF1_2F_fzf_2E_fish_files:/home/jurjen/\x2econfig/fish/functions/_fzf_configure_bindings_help\x2efish\x1e/home/jurjen/\x2econfig/fish/functions/_fzf_extract_var_info\x2efish\x1e/home/jurjen/\x2econfig/fish/functions/_fzf_preview_file\x2efish\x1e/home/jurjen/\x2econfig/fish/functions/_fzf_report_file_type\x2efish\x1e/home/jurjen/\x2econfig/fish/functions/_fzf_search_directory\x2efish\x1e/home/jurjen/\x2econfig/fish/functions/_fzf_search_git_log\x2efish\x1e/home/jurjen/\x2econfig/fish/functions/_fzf_search_git_status\x2efish\x1e/home/jurjen/\x2econfig/fish/functions/_fzf_search_history\x2efish\x1e/home/jurjen/\x2econfig/fish/functions/_fzf_search_variables\x2efish\x1e/home/jurjen/\x2econfig/fish/functions/_fzf_wrapper\x2efish\x1e/home/jurjen/\x2econfig/fish/functions/fzf_configure_bindings\x2efish\x1e/home/jurjen/\x2econfig/fish/conf\x2ed/fzf\x2efish\x1e/home/jurjen/\x2econfig/fish/completions/fzf_configure_bindings\x2efish
+SETUVAR _fisher_jorgebucaran_2F_autopair_2E_fish_files:/home/jurjen/\x2econfig/fish/functions/_autopair_backspace\x2efish\x1e/home/jurjen/\x2econfig/fish/functions/_autopair_insert_left\x2efish\x1e/home/jurjen/\x2econfig/fish/functions/_autopair_insert_right\x2efish\x1e/home/jurjen/\x2econfig/fish/functions/_autopair_insert_same\x2efish\x1e/home/jurjen/\x2econfig/fish/functions/_autopair_tab\x2efish\x1e/home/jurjen/\x2econfig/fish/conf\x2ed/autopair\x2efish
+SETUVAR _fisher_jorgebucaran_2F_fisher_files:/home/jurjen/\x2econfig/fish/functions/fisher\x2efish\x1e/home/jurjen/\x2econfig/fish/completions/fisher\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejorgebucaran/autopair\x2efish\x1ePatrickF1/fzf\x2efish
 SETUVAR fish_color_autosuggestion:747369
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:99cc99
