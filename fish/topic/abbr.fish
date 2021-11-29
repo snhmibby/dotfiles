@@ -13,6 +13,9 @@ abbr ll ls -lh
 abbr c clear
 abbr cl 'clear; ls'
 abbr ws sudo wireshark
+abbr m neomutt
+abbr mail neomutt
+abbr fm fetchmail
 
 # wifi
 abbr wifiscan sudo iwlist wlp2s0 scan

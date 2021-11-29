@@ -12,12 +12,15 @@ SETUVAR _fish_abbr_aptu:sudo\x20apt\x20update\x3b\x20sudo\x20apt\x20upgrade
 SETUVAR _fish_abbr_c:clear
 SETUVAR _fish_abbr_cl:clear\x3b\x20ls
 SETUVAR _fish_abbr_down:sudo\x20ifdown\x20wlp2s0
+SETUVAR _fish_abbr_fm:fetchmail
 SETUVAR _fish_abbr_fugit:vim\x20\x2dc\x20Git
 SETUVAR _fish_abbr_g:egrep
 SETUVAR _fish_abbr_intf:sudo\x20vim\x20/etc/network/interfaces
 SETUVAR _fish_abbr_l:less
 SETUVAR _fish_abbr_lf:ls\x20\x2dF
 SETUVAR _fish_abbr_ll:ls\x20\x2dlh
+SETUVAR _fish_abbr_m:neomutt
+SETUVAR _fish_abbr_mail:neomutt
 SETUVAR _fish_abbr_net:sudo\x20vim\x20/etc/network/interfaces
 SETUVAR _fish_abbr_scan:sudo\x20iwlist\x20wlp2s0\x20scan
 SETUVAR _fish_abbr_up:sudo\x20ifup\x20wlp2s0
