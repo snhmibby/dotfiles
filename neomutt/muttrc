@@ -3,13 +3,13 @@
 
 #files and folders
 set folder="$HOME/mail"
-set mbox=+inbox-unsorted
+set mbox=+inbox/@jurjen.dev
 set postponed=+postponed
 set record=+sent
 set tmpdir=/tmp
 
-set alias_file=~/mail/.mutt_aliases
-source ~/mail/.mutt_aliases
+set alias_file=~/mail/.aliases
+source ~/mail/.aliases
 
 #incoming new mailboxes
 mailboxes +inbox/@jurjen.dev
@@ -21,7 +21,7 @@ mailboxes +list/discourse.gohugo.io
 mailboxes +list/rawfood.rainbowinfo.de
 
 #outgoing mail
-source "gpg -d smtp_config |"
+source "gpg -d ~/.config/neomutt/smtp_config |"
 set ssl_force_tls=yes
 set ssl_starttls=yes
 set use_from = yes
@@ -73,3 +73,7 @@ bind attach <return> view-mailcap
 source gpg.rc
 set crypt_autosign
 set crypt_verify_sig=yes
+
+#powerline
+source powerline/colors/gruvbox-powerline.neomuttrc
+source powerline/powerline.neomuttrc
