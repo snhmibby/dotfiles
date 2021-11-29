@@ -1,0 +1,3 @@
+[submodule "neomutt/powerline"]
+	path = neomutt/powerline
+	url = https://github.com/sheoak/neomutt-powerline-nerdfonts
