@@ -13,7 +13,6 @@ SETUVAR _fish_abbr_c:clear
 SETUVAR _fish_abbr_cl:clear\x3b\x20ls
 SETUVAR _fish_abbr_down:sudo\x20ifdown\x20wlp2s0
 SETUVAR _fish_abbr_fm:fetchmail
-SETUVAR _fish_abbr_fugit:vim\x20\x2dc\x20Git
 SETUVAR _fish_abbr_g:egrep
 SETUVAR _fish_abbr_intf:sudo\x20vim\x20/etc/network/interfaces
 SETUVAR _fish_abbr_l:less

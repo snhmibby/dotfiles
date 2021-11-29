@@ -9,7 +9,7 @@ add_path $HOME/bin/firefox-download/
 add_path $HOME/bin/heroku/
 
 
-# source topic-specific config files
-for f in $HOME/.config/fish/topic/*
+# source custom config
+for f in $HOME/.config/fish/custom/*
     source $f
 end
