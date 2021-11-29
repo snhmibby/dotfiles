@@ -2,18 +2,21 @@ abbr .. cd ..
 abbr ... cd ../..
 abbr .... cd ../../..
 
-#silly convenience
+#convenience
 abbr v vim
+abbr vimrc vim ~/.vimrc
+abbr fugit vim -c Git
 abbr g egrep
 abbr l less
 abbr lf ls -F
+abbr ll ls -lh
 abbr c clear
 abbr cl 'clear; ls'
 abbr ws sudo wireshark
 
 # wifi
-abbr scan sudo iwlist wlp2s0 scan
-abbr net sudo vim /etc/network/interfaces
+abbr wifiscan sudo iwlist wlp2s0 scan
+abbr intf sudo vim /etc/network/interfaces
 abbr up sudo ifup wlp2s0
 abbr down sudo ifdown wlp2s0
 
