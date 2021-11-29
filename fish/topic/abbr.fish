@@ -21,6 +21,7 @@ abbr up sudo ifup wlp2s0
 abbr down sudo ifdown wlp2s0
 
 # apt
+abbr apts apt search
 abbr apt sudo apt
 abbr apti sudo apt install
 abbr aptu 'sudo apt update; sudo apt upgrade'

@@ -1,3 +1,7 @@
+#stolen from some github repo
+#configure git_prompt (used in functions/fish_prompt)
+#see: /usr/share/fish/functions/fish_git_prompt
+
 set __fish_git_prompt_showdirtystate 'yes'
 set __fish_git_prompt_showstashstate 'yes'
 set __fish_git_prompt_showuntrackedfiles 'yes'

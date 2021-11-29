@@ -7,6 +7,7 @@ SETUVAR _fish_abbr__2E_2E_2E_2E_:cd\x20\x2e\x2e/\x2e\x2e/\x2e\x2e
 SETUVAR _fish_abbr_add:lf\x20ls\x20\x2dF
 SETUVAR _fish_abbr_apt:sudo\x20apt
 SETUVAR _fish_abbr_apti:sudo\x20apt\x20install
+SETUVAR _fish_abbr_apts:apt\x20search
 SETUVAR _fish_abbr_aptu:sudo\x20apt\x20update\x3b\x20sudo\x20apt\x20upgrade
 SETUVAR _fish_abbr_c:clear
 SETUVAR _fish_abbr_cl:clear\x3b\x20ls
