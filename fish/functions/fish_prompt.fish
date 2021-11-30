@@ -2,7 +2,7 @@
 function fish_hostname -d "print hostname for prompt"
 	if [ "$SSH_CONNECTION" != "" ]
         set_color red
-		echo "ssh://"
+		printf "ssh://"
 	end
 	hostname
 end
