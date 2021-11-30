@@ -1,4 +1,5 @@
 PATH='/sbin'
+#only allow outgoing connections
 
 #flush everything
 iptables -F
