@@ -1,6 +1,7 @@
 #all prompt related functions are here
 function fish_hostname -d "print hostname for prompt"
 	if [ "$SSH_CONNECTION" != "" ]
+        set_color red
 		echo "ssh://"
 	end
 	hostname
