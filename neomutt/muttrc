@@ -18,7 +18,6 @@ mailboxes +inbox/riseup-landloper
 mailboxes +list/rainbow-belgium.lists.riseup.net
 mailboxes +list/rawfood.rainbowinfo.de
 mailboxes +list/discourse.gohugo.io
-mailboxes +list/rawfood.rainbowinfo.de
 
 #outgoing mail
 source "gpg -d ~/.config/neomutt/smtp_config |"
