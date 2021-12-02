@@ -72,6 +72,7 @@ bind attach <return> view-mailcap
 source gpg.rc
 set crypt_autosign
 set crypt_verify_sig=yes
+unset crypt_use_gpgme
 
 #powerline
 source powerline/colors/gruvbox-powerline.neomuttrc

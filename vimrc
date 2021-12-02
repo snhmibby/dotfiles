@@ -8,7 +8,7 @@ set mouse=a
 set number
 set autoindent smartindent
 set ts=4 sw=4
-set completeopt=menu,menuone,longest
+set completeopt=menu,menuone,longest,noinsert
 set foldmethod=syntax
 set clipboard+=unnamed
 set encoding=utf-8
@@ -100,7 +100,7 @@ let g:user_emmet_leader_key='<C-e>'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " autopairs
 au BufWinEnter * let g:AutoPairs['<']='>'
-au FileType html let b:AutoPairs = AutoPairsDefine({'{{' : '}}', '{{<' : '>}}', '<!--' : '-->'}, ['{'])
+au FileType html let b:AutoPairs = AutoPairsDefine({'{{' : '}}', '{{<' : '>}}', '<!--' : '-->'})
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " minibuf explorer

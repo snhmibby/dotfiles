@@ -13,6 +13,7 @@ SETUVAR _fish_abbr_c:clear
 SETUVAR _fish_abbr_cl:clear\x3b\x20ls
 SETUVAR _fish_abbr_down:sudo\x20ifdown\x20wlp2s0
 SETUVAR _fish_abbr_fm:fetchmail
+SETUVAR _fish_abbr_fox_2D_weiqi:wine\x20\x22/home/jurjen/\x2ewine/drive_c/Program\x20Files\x20\x28x86\x29/foxwq/foxwq/foxwq\x2eexe\x22
 SETUVAR _fish_abbr_g:egrep
 SETUVAR _fish_abbr_intf:sudo\x20vim\x20/etc/network/interfaces
 SETUVAR _fish_abbr_l:less

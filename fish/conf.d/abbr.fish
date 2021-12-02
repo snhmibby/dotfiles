@@ -27,3 +27,6 @@ abbr apts apt search
 abbr apt sudo apt
 abbr apti sudo apt install
 abbr aptu 'sudo apt update; sudo apt upgrade'
+
+#games
+abbr fox-weiqi wine \"'/home/jurjen/.wine/drive_c/Program Files (x86)/foxwq/foxwq/foxwq.exe'\"
