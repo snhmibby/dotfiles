@@ -1,5 +1,4 @@
 #TODO: set folder-hooks
-#TODO: set up a better password-store
 
 #files and folders
 set folder="$HOME/mail"
@@ -32,7 +31,6 @@ set reply_to
 set reverse_name
 set include #include message when replying
 set forward_quote #include message when forwarding
-
 
 #behaviour and display
 set date_format="%d/%m/%y"
