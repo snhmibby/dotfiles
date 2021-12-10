@@ -13,3 +13,7 @@ add_path $HOME/bin/firefox-download/
 add_path $HOME/bin/heroku/
 add_path /usr/libexec/
 add_path /usr/libexec/neomutt
+add_path $HOME/.cabal/bin
+add_path $HOME/.ghcup/bin
+
+#set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin $PATH /home/jurjen/.ghcup/bin # ghcup-env
