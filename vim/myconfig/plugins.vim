@@ -7,7 +7,7 @@ Plug 'alvan/vim-closetag'
 Plug 'chrisbra/matchit'
 Plug 'evanleck/vim-svelte'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug  'honza/vim-snippets'
+Plug 'honza/vim-snippets'
 Plug 'itchyny/lightline.vim'
 Plug 'jiangmiao/auto-pairs'
 "Plug 'junegunn/fzf'
