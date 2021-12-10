@@ -14,9 +14,8 @@ source ~/mail/.aliases
 mailboxes +inbox/@jurjen.dev
 mailboxes +inbox/yahoo-jurjenm
 mailboxes +inbox/riseup-landloper
-mailboxes +list/rainbow-belgium.lists.riseup.net
-mailboxes +list/rawfood.rainbowinfo.de
-mailboxes +list/discourse.gohugo.io
+#mailing lists
+subscribe .*@lists.riseup.net
 
 #outgoing mail
 source "gpg -d ~/.config/neomutt/smtp_config |"
@@ -42,6 +41,13 @@ set nomark_old
 #status line on terminal title:
 set ts_enabled=yes
 set ts_status_format = "%n new | %M in %f"
+# Sven's draconian header weeding (copied from neomutt user guide)
+ignore *
+unignore from date subject to cc
+unignore organization organisation x-mailer: x-newsreader: x-mailing-list: list-id:
+unignore posted-to:
+hdr_order From Date: From: To: Cc: Subject:
+
 
 #Pager
 set pager_index_lines = 10
