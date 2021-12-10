@@ -5,6 +5,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'alvan/vim-closetag'
 Plug 'chrisbra/matchit'
+Plug 'eagletmt/ghcmod-vim'
 Plug 'evanleck/vim-svelte'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'honza/vim-snippets'
@@ -21,6 +22,7 @@ Plug 'preservim/tagbar'
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
+Plug 'Shougo/vimproc'
 Plug 'tpope/vim-fugitive'
 call plug#end()
 
