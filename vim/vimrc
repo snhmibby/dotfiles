@@ -1,0 +1,19 @@
+"generic options/vim variables
+runtime myconfig/options.vim
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" PLUGIN configuration
+
+"list of plugins:
+runtime myconfig/plugins.vim
+
+"config per plugin:
+runtime myconfig/lightline.vim
+runtime myconfig/vim-go.vim
+runtime myconfig/coc.vim
+runtime myconfig/nerdtree.vim
+runtime myconfig/tagbar.vim
+runtime myconfig/emmet.vim
+runtime myconfig/autopairs.vim
+runtime myconfig/minibuf.vim
+colorscheme gruvbox
