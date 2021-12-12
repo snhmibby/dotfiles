@@ -4,6 +4,7 @@ syntax on
 filetype plugin indent on
 colorscheme slate
 set hlsearch
+set linebreak
 set mouse=a
 set number
 set autoindent smartindent
