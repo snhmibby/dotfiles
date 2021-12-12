@@ -16,6 +16,11 @@ abbr m neomutt
 abbr mail neomutt
 abbr fm fetchmail
 
+# documentation
+abbr doc-dev 'firefox devdocs.io'
+abbr doc-ghc 'firefox ~/.ghcup/share/doc/ghc-8.10.7/html/index.html'
+abbr doc-hugo 'cd ~/src/other/hugo/docs && hugo server -p 12345 &; sleep 2 && firefox localhost:12345'
+
 # wifi
 abbr wifiscan sudo iwlist wlp2s0 scan
 abbr intf sudo vim /etc/network/interfaces
