@@ -16,7 +16,7 @@ abbr m neomutt
 abbr mail neomutt
 abbr fm fetchmail
 
-# documentation
+# html documentation
 abbr doc-dev 'firefox devdocs.io'
 abbr doc-ghc 'firefox ~/.ghcup/share/doc/ghc-8.10.7/html/index.html'
 abbr doc-hugo 'cd ~/src/other/hugo/docs && hugo server -p 12345 &; sleep 2 && firefox localhost:12345'
