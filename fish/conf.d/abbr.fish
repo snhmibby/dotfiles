@@ -15,6 +15,7 @@ abbr ws sudo wireshark
 abbr m neomutt
 abbr mail neomutt
 abbr fm fetchmail
+abbr go18 go1.18beta1
 
 # html documentation
 abbr doc-dev 'firefox devdocs.io'
