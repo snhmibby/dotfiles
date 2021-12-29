@@ -11,10 +11,15 @@ SETUVAR _fish_abbr_apts:apt\x20search
 SETUVAR _fish_abbr_aptu:sudo\x20apt\x20update\x3b\x20sudo\x20apt\x20upgrade
 SETUVAR _fish_abbr_c:clear
 SETUVAR _fish_abbr_cl:clear\x3b\x20ls
+SETUVAR _fish_abbr_devdoc:firefox\x20www\x2edevdocs\x2eio
+SETUVAR _fish_abbr_doc_2D_dev:firefox\x20devdocs\x2eio
+SETUVAR _fish_abbr_doc_2D_ghc:firefox\x20\x7e/\x2eghcup/share/doc/ghc\x2d8\x2e10\x2e7/html/index\x2ehtml
+SETUVAR _fish_abbr_doc_2D_hugo:cd\x20\x7e/src/other/hugo/docs\x20\x26\x26\x20hugo\x20server\x20\x2dp\x2012345\x20\x26\x3b\x20sleep\x202\x20\x26\x26\x20firefox\x20localhost\x3a12345
 SETUVAR _fish_abbr_down:sudo\x20ifdown\x20wlp2s0
 SETUVAR _fish_abbr_fm:fetchmail
 SETUVAR _fish_abbr_fox_2D_weiqi:wine\x20\x22/home/jurjen/\x2ewine/drive_c/Program\x20Files\x20\x28x86\x29/foxwq/foxwq/foxwq\x2eexe\x22
 SETUVAR _fish_abbr_g:egrep
+SETUVAR _fish_abbr_go18:go1\x2e18beta1
 SETUVAR _fish_abbr_intf:sudo\x20vim\x20/etc/network/interfaces
 SETUVAR _fish_abbr_l:less
 SETUVAR _fish_abbr_lf:ls\x20\x2dF
