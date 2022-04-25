@@ -36,3 +36,4 @@ abbr aptu 'sudo apt update; sudo apt upgrade'
 
 #games
 abbr fox-weiqi wine \"'/home/jurjen/.wine/drive_c/Program Files (x86)/foxwq/foxwq/foxwq.exe'\"
+abbr continuum wine \"'/home/jurjen/.wine/drive_c/Program Files (x86)/Continuum/Continuum.exe'\"
