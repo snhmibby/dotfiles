@@ -17,7 +17,7 @@ bindsym $mod+Shift+s scratchpad show
 bindsym $mod+Shift+n move scratchpad
 
 # use vi bindings
-set $mod Mod4
+set $mod Mod1
 set $left h
 set $down j
 set $up k
