@@ -1,6 +1,11 @@
 # i3 config file (v4)
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+# GAPS, like a true unixporn ricer
+for_window [class=".*"] border none
+gaps inner 10
+gaps outer 5
+
 # start these programs
 exec i3-sensible-terminal
 exec firefox
@@ -152,10 +157,13 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        font pango:GoMono Nerd Font Mono 9
-        status_command i3status
-}
+#bar {
+        #font pango:GoMono Nerd Font Mono 9
+        #status_command i3status
+#}
+
+# Start polybar
+exec_always --no-startup-id $HOME/.config/polybar/start-polybar.sh
 
 # bindings for lenovo function keys
 ## volume keys
@@ -170,5 +178,5 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 ## display backlight
-bindsym XF86MonBrightnessDown exec xbacklight -dec 15
-bindsym XF86MonBrightnessUp exec xbacklight -inc 15
+bindsym XF86MonBrightnessDown exec sudo xbacklight -dec 10
+bindsym XF86MonBrightnessUp exec sudo xbacklight -inc 10
