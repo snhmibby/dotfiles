@@ -4,6 +4,7 @@ filetype plugin indent on
 set bg=dark
 set hlsearch
 set linebreak
+set ttymouse=sgr "for alacritty
 set mouse=a
 set number
 set autoindent smartindent
