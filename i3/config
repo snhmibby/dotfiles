@@ -1,7 +1,7 @@
 # i3 config file (v4)
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-# GAPS, like a true unixporn ricer
+# use GAPS, like a true unixporner
 for_window [class=".*"] border none
 gaps inner 10
 gaps outer 5
@@ -43,8 +43,8 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+c kill
 
-# start dmenu (a program launcher)
-bindsym $mod+p exec dmenu_run
+# start ROFI, because I'm hip now
+bindsym $mod+p exec rofi -show run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
