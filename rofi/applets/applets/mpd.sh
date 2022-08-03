@@ -48,7 +48,7 @@ previous=""
 options="$previous\n$play_pause\n$stop\n$next\n$tog_repeat\n$tog_random"
 
 # Get the current playing song
-current=$(mpc -f "%title%" current)
+current=$(mpc -f "%title%|%file%" current)
 # If mpd isn't running it will return an empty string, we don't want to display that
 if [[ -z "$current" ]]; then
     current="-"
@@ -58,16 +58,16 @@ fi
 chosen="$(echo -e "$options" | $rofi_command -p "  $current" -dmenu $active $urgent -selected-row 1)"
 case $chosen in
     $previous)
-        mpc -q prev && notify-send -u low -t 1800 " $(mpc current)"
+        mpc -q prev
         ;;
     $play_pause)
-        mpc -q toggle && notify-send -u low -t 1800 " $(mpc current)"
+        mpc -q toggle
         ;;
     $stop)
         mpc -q stop
         ;;
     $next)
-        mpc -q next && notify-send -u low -t 1800 " $(mpc current)"
+        mpc -q next
         ;;
     $tog_repeat)
         mpc -q repeat
