@@ -178,3 +178,7 @@ bindsym XF86AudioPrev exec playerctl previous
 ## display backlight
 bindsym XF86MonBrightnessDown exec sudo xbacklight -dec 10
 bindsym XF86MonBrightnessUp exec sudo xbacklight -inc 10
+
+########################
+## extra hacks
+for_window [class="popup"] floating enable
