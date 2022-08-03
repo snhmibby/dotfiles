@@ -5,6 +5,7 @@
 for_window [class=".*"] border none
 gaps inner 10
 gaps outer 5
+gaps bottom 40
 
 # start these programs
 exec i3-sensible-terminal
@@ -13,6 +14,7 @@ exec firefox
 # default layout
 workspace_layout tabbed
 default_border normal 1
+default_orientation vertical
 
 # rename workspace
 bindsym $mod+c exec i3-input -F 'rename workspace to "%s"' -P 'Rename workspace: '
