@@ -40,7 +40,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+c kill
 
 # start ROFI, because I'm hip now
-bindsym $mod+p exec rofi -show run
+bindsym $mod+p exec rofi -show drun
 
 # change focus
 bindsym $mod+$left focus left

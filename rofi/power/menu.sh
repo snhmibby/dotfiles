@@ -8,7 +8,7 @@ lock=
 suspend=
 logout=
 options="$shutdown\n$reboot\n$lock\n$suspend\n$logout"
-theme="$HOME/.config/polybar/power/menu.rasl"
+theme="$HOME/.config/rofi/power/menu.rasl"
 
 opt=$(echo -e "$options" | rofi -theme "$theme" -dmenu)
 case $opt in
