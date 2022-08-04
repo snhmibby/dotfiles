@@ -5,8 +5,8 @@
 # configuration variables
 
 # cannot move window entirely off screen, has to have 1 pixel on
-on_screenX=25
-on_screenY=25
+on_screenX=15
+on_screenY=15
 off_screenX=1919
 off_screenY=1079
 
@@ -23,7 +23,7 @@ get_geometry() {
 }
 
 off_screen() {
-	test $X -ne $on_screenX
+	test $X -eq $off_screenX
 }
 
 toggle_window() {
