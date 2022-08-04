@@ -12,7 +12,7 @@ configuration {
 
 window {
 	location: southeast;
-	x-offset: -46px;
+	x-offset: -45px;
 	y-offset: -6px;
 	children: [listview];
 	border-radius: 20px;
