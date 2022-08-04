@@ -7,10 +7,6 @@ gaps inner 10
 gaps outer 5
 gaps bottom 40
 
-# start these programs
-exec i3-sensible-terminal
-exec firefox
-
 # default layout
 workspace_layout tabbed
 default_border normal 1
