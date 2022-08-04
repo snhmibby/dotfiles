@@ -1,4 +1,4 @@
-#!/bin/bash
+!/bin/bash
 # use xdotool to move a window on and off screen
 
 #########################################################
@@ -23,7 +23,7 @@ get_geometry() {
 }
 
 off_screen() {
-	test $X -eq $off_screenX
+	test $X -ne $on_screenX
 }
 
 toggle_window() {
