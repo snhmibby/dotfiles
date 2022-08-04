@@ -5,8 +5,8 @@
 # configuration variables
 
 # cannot move window entirely off screen, has to have 1 pixel on
-on_screenX=15
-on_screenY=15
+on_screenX=5
+on_screenY=5
 off_screenX=1919
 off_screenY=1079
 
