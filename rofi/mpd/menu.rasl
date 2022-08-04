@@ -1,0 +1,58 @@
+configuration {
+	show-icons: false;
+}
+
+* {
+	background-color: #333333;
+	altbg: #444444;
+	fg: #dfdfdf;
+	accent: #346db3;
+	active: #336f18;
+	font: "Hack 15";
+}
+
+window {
+	location: southeast;
+	x-offset: -10px;
+	y-offset: -6;
+	children: [listview];
+	border-radius: 20px;
+	padding: 3px 3px;
+	width: 215px;
+}
+
+listview {
+	reverse: true;
+	lines: 6;
+	fixed-height: false;
+	layout: horizontal;	
+	spacing: 5px;
+	cursor: pointer;
+}
+
+element {
+	background-color: @altbg;
+	text-color: @fg;
+	border-radius: 20px;
+}
+
+element selected {
+	text-color: @accent;
+}
+
+element normal.active,
+element selected.active,
+element alternate.active,
+{
+	background-color: @active;
+}
+
+element-text {
+	background-color: inherit;
+	text-color: inherit;
+	format: bold;
+	font: @font;
+	width: 30px;
+	horizontal-align: 0.5;
+	vertical-align: 0.5;
+}
