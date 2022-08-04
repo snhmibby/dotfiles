@@ -25,6 +25,7 @@ listview {
 	fixed-height: false;
 	layout: vertical;	
 	spacing: 5px;
+	cursor: pointer;
 }
 
 element {

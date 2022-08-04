@@ -8,7 +8,7 @@ lock=
 suspend=
 logout=
 options="$shutdown\n$reboot\n$lock\n$suspend\n$logout"
-theme=menu.rasl
+theme="$HOME/.config/polybar/power/menu.rasl"
 
 opt=$(echo -e "$options" | rofi -theme "$theme" -dmenu)
 case $opt in
@@ -19,7 +19,7 @@ case $opt in
 		systemctl reboot
 		;;
 	$lock)
-		#XX TODO install screen locker
+		rofi -e "instal & configure screen locker you lazy )@!#*&"
 		;;
 	$suspend)
 		mpc -q pause
