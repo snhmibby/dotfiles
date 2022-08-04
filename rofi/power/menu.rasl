@@ -7,31 +7,32 @@ configuration {
 	altbg: #444444;
 	fg: #dfdfdf;
 	accent: #E60053;
-	font: "hack 20";
+	font: "Hack 15";
 }
 
 window {
 	location: southeast;
-	x-offset: -180px;
+	x-offset: -46px;
+	y-offset: -6px;
 	children: [listview];
 	border-radius: 20px;
-	padding: 5px 5px;
-	width: 50px;
+	padding: 3px 3px;
+	width: 180px;
 }
 
 listview {
 	reverse: true;
 	lines: 5;
 	fixed-height: false;
-	layout: vertical;	
+	layout: horizontal;	
 	spacing: 5px;
-	cursor: pointer;
 }
 
 element {
 	background-color: @altbg;
 	text-color: @fg;
 	border-radius: 20px;
+	cursor: pointer;
 }
 
 element selected {
@@ -43,7 +44,7 @@ element-text {
 	text-color: inherit;
 	format: bold;
 	font: @font;
-	width: 45px;
+	width: 30px;
 	horizontal-align: 0.5;
 	vertical-align: 0.5;
 }

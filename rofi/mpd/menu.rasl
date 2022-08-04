@@ -27,13 +27,13 @@ listview {
 	fixed-height: false;
 	layout: horizontal;	
 	spacing: 5px;
-	cursor: pointer;
 }
 
 element {
 	background-color: @altbg;
 	text-color: @fg;
 	border-radius: 20px;
+	cursor: pointer;
 }
 
 element selected {
