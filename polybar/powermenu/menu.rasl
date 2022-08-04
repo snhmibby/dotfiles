@@ -1,0 +1,48 @@
+configuration {
+	show-icons: false;
+}
+
+* {
+	background-color: #333333;
+	altbg: #444444;
+	fg: #dfdfdf;
+	accent: #E60053;
+	font: "hack 20";
+}
+
+window {
+	location: southeast;
+	x-offset: -180px;
+	children: [listview];
+	border-radius: 20px;
+	padding: 5px 5px;
+	width: 50px;
+}
+
+listview {
+	reverse: true;
+	lines: 5;
+	fixed-height: false;
+	layout: vertical;	
+	spacing: 5px;
+}
+
+element {
+	background-color: @altbg;
+	text-color: @fg;
+	border-radius: 20px;
+}
+
+element selected {
+	text-color: @accent;
+}
+
+element-text {
+	background-color: inherit;
+	text-color: inherit;
+	format: bold;
+	font: @font;
+	width: 45px;
+	horizontal-align: 0.5;
+	vertical-align: 0.5;
+}
