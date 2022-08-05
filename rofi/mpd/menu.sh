@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#homebrew power menu
+#homebrew mpd menu
 
 play=
 pause=
