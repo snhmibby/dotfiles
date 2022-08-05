@@ -9,14 +9,13 @@ configuration {
 	accent: #ff0000;
 	active: #0000ff;
 	font: "Hack 15";
-	elems: 6;
 	xoff: 0px;
 	yoff: -4px;
-	size: 128px;
+	size: 215px;
 }
 
 window {
-	location: southeast;
+	location: southwest;
 	x-offset: @xoff;
 	y-offset: @yoff;
 	children: [listview];

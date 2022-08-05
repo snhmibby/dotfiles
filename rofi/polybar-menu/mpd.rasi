@@ -3,7 +3,6 @@
 * {
 	accent: #346db3;
 	active: #336f18;
-	elems: 6;
-	xoff: -1390px;
+	xoff: 86px;
 	size: 215px;
 }

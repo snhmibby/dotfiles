@@ -2,13 +2,13 @@
 
 #homebrew power menu
 
+theme="polybar-menu/power"
 shutdown=
 reboot=
 lock=
 suspend=
 logout=
 options="$shutdown\n$reboot\n$lock\n$suspend\n$logout"
-theme="power/menu"
 
 opt=$(echo -e "$options" | rofi -theme "$theme" -dmenu)
 case $opt in

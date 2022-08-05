@@ -2,7 +2,7 @@
 
 #homebrew mpd menu
 
-theme="mpd/menu"
+theme="polybar-menu/mpd"
 play=
 pause=
 stop=""
