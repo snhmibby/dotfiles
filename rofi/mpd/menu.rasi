@@ -4,6 +4,6 @@
 	accent: #346db3;
 	active: #336f18;
 	elems: 6;
-	xoff: -10px;
+	xoff: -1390px;
 	size: 215px;
 }
