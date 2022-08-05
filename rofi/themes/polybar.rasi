@@ -6,24 +6,28 @@ configuration {
 	background-color: #333333;
 	altbg: #444444;
 	fg: #dfdfdf;
-	accent: #346db3;
-	active: #336f18;
+	accent: #ff0000;
+	active: #0000ff;
 	font: "Hack 15";
+	elems: 6;
+	xoff: 0px;
+	yoff: 6px;
+	size: 128px;
 }
 
 window {
 	location: southeast;
-	x-offset: -10px;
-	y-offset: -6;
+	x-offset: @xoff;
+	y-offset: @yoff;
 	children: [listview];
 	border-radius: 20px;
 	padding: 3px 3px;
-	width: 215px;
+	width: @size;
 }
 
 listview {
 	reverse: true;
-	lines: 6;
+	lines: @lines;
 	fixed-height: false;
 	layout: horizontal;	
 	spacing: 5px;

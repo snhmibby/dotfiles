@@ -2,6 +2,7 @@
 
 #homebrew mpd menu
 
+theme="mpd/menu"
 play=
 pause=
 stop=""
@@ -34,8 +35,6 @@ if [[ "$status" =~ 'random: on' ]]; then
 fi
 
 options="$prev\n$toggle\n$stop\n$next\n$repeat\n$random"
-theme="$HOME/.config/rofi/mpd/menu.rasl"
-
 opt=$(echo -e "$options" | rofi -theme "$theme" -dmenu $active)
 case $opt in
 	$toggle)
