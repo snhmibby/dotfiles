@@ -11,7 +11,7 @@ configuration {
 	font: "Hack 15";
 	elems: 6;
 	xoff: 0px;
-	yoff: 6px;
+	yoff: -4px;
 	size: 128px;
 }
 
@@ -21,7 +21,7 @@ window {
 	y-offset: @yoff;
 	children: [listview];
 	border-radius: 20px;
-	padding: 3px 3px;
+	padding: 4px 4px;
 	width: @size;
 }
 
