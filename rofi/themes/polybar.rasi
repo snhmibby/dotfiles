@@ -13,6 +13,7 @@ configuration {
 	xoff: 0px;
 	yoff: -4px;
 	size: 215px;
+	element-width: 30px;
 }
 
 window {
@@ -56,7 +57,7 @@ element-text {
 	text-color: inherit;
 	format: bold;
 	font: @font;
-	width: 30px;
+	width: @element-width;
 	horizontal-align: 0.5;
 	vertical-align: 0.5;
 }

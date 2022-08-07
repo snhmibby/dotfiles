@@ -1,1 +1,2 @@
-SHELL=$(which fish) exec fish
+export SHELL=$(which fish)
+exec fish

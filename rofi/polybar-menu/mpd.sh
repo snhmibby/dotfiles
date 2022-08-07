@@ -5,9 +5,9 @@
 theme="polybar-menu/mpd"
 play=
 pause=
-stop=""
-next=""
-prev=""
+stop=
+next=
+prev=
 repeat=
 random=
 
