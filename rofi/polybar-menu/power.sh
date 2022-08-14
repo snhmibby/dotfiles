@@ -19,7 +19,7 @@ case $opt in
 		systemctl reboot
 		;;
 	$lock)
-		rofi -e "instal & configure screen locker you lazy )@!#*&"
+		rofi -e "instal & configure screen locker"
 		;;
 	$suspend)
 		mpc -q pause
