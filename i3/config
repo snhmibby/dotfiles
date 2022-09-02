@@ -3,8 +3,8 @@
 
 # use GAPS, like a true unixporner
 for_window [class=".*"] border none
-gaps inner 10
-gaps outer 5
+gaps inner 8
+gaps outer 0
 gaps bottom 40
 
 # default layout
