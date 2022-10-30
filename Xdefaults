@@ -1,17 +1,5 @@
-URxvt*background: Black
-URxvt*foreground: Grey
-URxvt*scrollBar: false
-
-
 !-- Xft settings -- !
 Xft.antialias:  true
-
-! -- Fonts -- !
-URxvt.font:xft:Monospace-Regular:pixelsize=10
-URxvt.boldfont:xft:Monospace-Bold:pixelsize=10
-
-urxvt*foreground: grey
-urxvt*background:black
 
 *color0:  #2E3436
 *color1:  #a40000
