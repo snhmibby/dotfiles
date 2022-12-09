@@ -1,26 +1,14 @@
-# Configuration for Alacritty, the GPU enhanced terminal emulator.
-
 window:
-  # Window padding (changes require restart)
   padding:
     x: 4
     y: 4
-
-  # Window decorations
   decorations: none
-
-  # Background opacity
   opacity: 0.9
-
-  # Allow terminal applications to change Alacritty's window title.
   dynamic_title: true
 
 scrolling:
-  # Maximum number of lines in the scrollback buffer.
-  # Specifying '0' will disable scrolling.
   history: 1000
 
-# Font configuration
 font:
   normal:
     family: Hack Nerd Font
