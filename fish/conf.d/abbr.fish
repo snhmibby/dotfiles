@@ -16,4 +16,4 @@ abbr m neomutt
 abbr mail neomutt
 abbr fm fetchmail
 
-abbr fox-wq 'wine .wine/drive_c/Program\ Files\ \(x86\)/foxwq/foxwq/foxwq.exe'
+abbr fox-wq 'wine ~/.wine/drive_c/Program\ Files\ \(x86\)/foxwq/foxwq/foxwq.exe'
