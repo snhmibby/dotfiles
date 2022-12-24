@@ -2,8 +2,6 @@
 " COC; conquerer of completion
 " list of installed plugins:
 " css emmet go html json snippets svelte tsserver
-" TODO
-" get C language server working :S
 
 "my personal bindings
 nmap <Leader>o :exec CocActionAsync('showOutline')<cr>
