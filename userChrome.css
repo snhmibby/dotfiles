@@ -52,3 +52,8 @@
     padding: 0px !important;
     min-height: 20px !important;
 }
+
+/* hack for vim-vixen showing a white block on the bottom */
+.vimvixen-console-frame {
+  color-scheme: light !important;
+}
