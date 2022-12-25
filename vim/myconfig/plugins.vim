@@ -25,5 +25,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'Shougo/vimproc'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'tpope/vim-fugitive'
+Plug 'cpiger/NeoDebug'
 call plug#end()
 
