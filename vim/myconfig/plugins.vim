@@ -10,6 +10,7 @@ Plug 'evanleck/vim-svelte'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'honza/vim-snippets'
 Plug 'itchyny/lightline.vim'
+Plug 'rbong/vim-flog'
 Plug 'jiangmiao/auto-pairs'
 "Plug 'junegunn/fzf'
 "Plug 'junegunn/fzf.vim'
