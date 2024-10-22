@@ -53,5 +53,6 @@
 			"rootPatterns": ["*.cabal", "stack.yaml", "cabal.project", "package.yaml", "hie.yaml", ".git/"],
 			"filetypes": ["haskell", "lhaskell"]
 		}
-	}
+  },
+  "svelte.enable-ts-plugin": false
 }

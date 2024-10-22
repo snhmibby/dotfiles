@@ -181,3 +181,4 @@ bindsym XF86Calculator exec /home/jurjen/.config/conky/toggle.sh
 ########################
 ## extra hacks
 for_window [class="popup"] floating enable
+for_window [class="ggnet.exe"] floating enable

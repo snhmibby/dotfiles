@@ -2,3 +2,5 @@
 
 The directories are ment to be symlinked from ~/.config.
 Loose files should be copied (or symlinked) from ~/.
+
+![looks like](./screenshots/rice.jpg)
