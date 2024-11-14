@@ -7,7 +7,7 @@ SETUVAR _fish_abbr__2E_2E_2E_2E_:cd\x20\x2e\x2e/\x2e\x2e/\x2e\x2e
 SETUVAR _fish_abbr_c:clear
 SETUVAR _fish_abbr_cl:clear\x3b\x20ls
 SETUVAR _fish_abbr_fm:fetchmail
-SETUVAR _fish_abbr_fox_2D_wq:wine\x20\x2ewine/drive_c/Program\x5c\x20Files\x5c\x20\x5c\x28x86\x5c\x29/foxwq/foxwq/foxwq\x2eexe
+SETUVAR _fish_abbr_fox_2D_wq:wine\x20\x7e/\x2ewine/drive_c/Program\x5c\x20Files\x5c\x20\x5c\x28x86\x5c\x29/foxwq/foxwq/foxwq\x2eexe
 SETUVAR _fish_abbr_g:egrep
 SETUVAR _fish_abbr_l:less
 SETUVAR _fish_abbr_lf:ls\x20\x2dF
@@ -39,9 +39,10 @@ SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrbl
 SETUVAR fish_color_status:red
 SETUVAR fish_color_user:brgreen
 SETUVAR fish_color_valid_path:\x2d\x2dunderline
-SETUVAR fish_key_bindings:fish_default_key_bindings
+SETUVAR fish_key_bindings:fish_vi_key_bindings
 SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow\x1e\x2di
 SETUVAR fish_pager_color_prefix:cyan\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
+SETUVAR fish_user_paths:/opt/Sabaki\x1e/home/jurjen/\x2eghcup/bin\x1e/usr/sbin\x1e/usr/local/sbin\x1e/home/jurjen/\x2elocal/bin

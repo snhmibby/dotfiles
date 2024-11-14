@@ -3,7 +3,6 @@ window:
     x: 4
     y: 4
   decorations: none
-  opacity: 0.9
   dynamic_title: true
 
 scrolling:

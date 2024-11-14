@@ -8,7 +8,8 @@ gaps outer 0
 gaps bottom 40
 
 # default layout
-workspace_layout tabbed
+#workspace_layout tabbed
+workspace_layout default
 default_border normal 1
 default_orientation vertical
 
